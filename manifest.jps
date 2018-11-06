@@ -2,7 +2,7 @@
 version: '1.0'
 type: install
 name: OpenMRS platform v2.1.3
-logo: images/openmrs-logo-100x100.png
+logo: images/openmrs-logo-75x75.png
 homepage: https://openmrs.org
 categories:
 - apps/medicine

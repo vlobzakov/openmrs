@@ -12,7 +12,7 @@ description:
 engine: java8
 ha: 'true'
 nodes:
-- cloudlets: 16
+- cloudlets: 24
   count: 1
   nodeType: tomcat
   tag: 9.0.12-jdk-10.0.2

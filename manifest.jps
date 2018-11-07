@@ -38,7 +38,7 @@ actions:
       - cd
       - mkdir .OpenMRS/modules
       - cd .OpenMRS/modules
-      - wget http://app.demo.jelastic.com/xssu/rest/download/RTYYHFU0AlIPAFxPMgBtEBNMWRIBSEdLDRo8Qyh0IgVKFkdXDwYAQmNTTEBI -O adminui.zip
+      - wget https://github.com/vlobzakov/openmrs/blob/master/modules/adminui-1.2.3.omod.zip -O adminui.zip
       - unzip adminui.zip
       - rm adminui.zip
       - wget https://github.com/vlobzakov/openmrs/blob/master/modules/legacyui-1.4.0.omod.zip -O legacyui.zip

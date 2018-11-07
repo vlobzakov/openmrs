@@ -1,0 +1,7 @@
+Legacy UI Module
+The majority of the legacy user interface comprised administrative functions and a tabbed patient dashboard. As of OpenMRS 2.0, a new and more contemporary UI was introduced via a UI framework and the legacy UI was kept around for administrative functions that were not yet implemented in the new UI.
+We plan to retire the legacy UI, but there are many implementations and modules that still rely on it. In order to maintain backwards compatibility, we want to move the legacy UI functions into a module that these implementations can install until they are able to migrate away from it.
+
+Admin UI Module
+Administration tools for the OpenMRS Reference Application.
+It is written using the new UI framework, some pages are written with the Groovy Server Page technology being backed up by controllers while other pages are written using angular and communicating with the server via the REST API provided by the web services module.

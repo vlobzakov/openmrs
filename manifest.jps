@@ -38,7 +38,7 @@ actions:
       - cd
       - mkdir .OpenMRS/modules
       - cd .OpenMRS/modules
-      - wget https://github.com/vlobzakov/openmrs/blob/master/modules/legacyui-1.4.0.omod.zip -O legacyui.zip
+      - wget https://github.com/vlobzakov/openmrs/raw/master/modules/legacyui-1.4.0.omod.zip -O legacyui.zip
       - unzip legacyui.zip
       - rm legacyui.zip
   restartapp:

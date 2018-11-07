@@ -38,9 +38,6 @@ actions:
       - cd
       - mkdir .OpenMRS/modules
       - cd .OpenMRS/modules
-      - wget https://github.com/vlobzakov/openmrs/blob/master/modules/adminui-1.2.3.omod.zip -O adminui.zip
-      - unzip adminui.zip
-      - rm adminui.zip
       - wget https://github.com/vlobzakov/openmrs/blob/master/modules/legacyui-1.4.0.omod.zip -O legacyui.zip
       - unzip legacyui.zip
       - rm legacyui.zip
@@ -48,8 +45,8 @@ actions:
     - restartNodes:
         nodeGroup: cp
 startPage: ${env.url}initialsetup
-success: "Do initial setup by [${env.url}initialsetup](${env.url}initialsetup). To configure database connection use address:
- node${nodes.sqldb.master.id}-${env.domain}, database name: **openmrs**, username: **openmrs**, 
+success: "Do initial setup by link [${env.url}initialsetup](${env.url}initialsetup). To configure database connection use  db address:
+ **node${nodes.sqldb.master.id}-${env.domain}**, database name: **openmrs**, username: **openmrs**, 
 password: **${nodes.sqldb.password}**. 
-Please enter your new *admin* password. Use this password to login to your OpenMRS Platform [${env.url}](${env.url}). To add custom domain name for your OpenMRS installation follow the steps described in our [documentation](http://docs.jelastic.com/custom-domains)"
+Please enter your new **admin** password. Use this password to login to your OpenMRS Platform **[${env.url}](${env.url})**. To add custom domain name for your OpenMRS installation follow the steps described in our [documentation](http://docs.jelastic.com/custom-domains)"
  

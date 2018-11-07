@@ -22,7 +22,6 @@ nodes:
 onInstall:
 - deployArchive
 - createdb
-- deployModules
 - restartapp
 actions:
   deployArchive:

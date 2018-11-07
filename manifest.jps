@@ -41,7 +41,7 @@ actions:
       - wget http://app.demo.jelastic.com/xssu/rest/download/RTYYHFU0AlIPAFxPMgBtEBNMWRIBSEdLDRo8Qyh0IgVKFkdXDwYAQmNTTEBI -O adminui.zip
       - unzip adminui.zip
       - rm adminui.zip
-      - wget http://app.demo.jelastic.com/xssu/rest/download/RTYYHAFkVFBUAA9MYwQ5FBFBXEUBT0EXCEQ7SC92cAJFHkdZDwYAQmNTTEBI -O legacyui.zip
+      - wget https://github.com/vlobzakov/openmrs/blob/master/modules/legacyui-1.4.0.omod.zip -O legacyui.zip
       - unzip legacyui.zip
       - rm legacyui.zip
   restartapp:

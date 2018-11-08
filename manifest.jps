@@ -32,14 +32,6 @@ actions:
   createdb:
     cmd[sqldb]:
       mysql -uroot -p${nodes.sqldb.password} -e "create database openmrs;CREATE USER 'openmrs'@'%' IDENTIFIED BY '${nodes.sqldb.password}';GRANT ALL ON *.* TO 'openmrs'@'%';FLUSH PRIVILEGES;"
-  deployModules:
-    cmd[cp]:
-      - cd
-      - mkdir .OpenMRS/modules
-      - cd .OpenMRS/modules
-      - wget https://github.com/vlobzakov/openmrs/raw/master/modules/legacyui-1.4.0.omod.zip -O legacyui.zip
-      - unzip legacyui.zip
-      - rm legacyui.zip
   restartapp:
     - restartNodes:
         nodeGroup: cp
